@@ -5,7 +5,6 @@
 @endsection
 
 @section('content')
-
 <?php
     echo $main_content;
   ?>
