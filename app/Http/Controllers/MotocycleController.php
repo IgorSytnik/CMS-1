@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\motocycle;
 use App\Models\news;
 use App\Models\accessory;
+use App\Models\Page;
 
 class MotocycleController extends Controller
 {

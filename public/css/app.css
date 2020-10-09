@@ -1,752 +1,488 @@
-@charset "UTF-8";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: none;
+  font-family: Lucida Sans Unicode;
+  background-repeat: no-repeat;
 }
-
-body,
-html {
-  min-height: 100%;
-  font-family: sans-serif;
-  font-size: 20px;
-}
-
 body {
-  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: linear-gradient(180deg, rgb(31, 160, 230)30%, 
+                                          rgb(30, 99, 131));
+  background-repeat: no-repeat;
+  color: white;
 }
-
-/* для лендинга */
-.frstsection {
-  margin-top: 3vw;
+#Lround_button {
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  margin-left: 1em;
+  border-radius: 25px;
+  background-color: #02A0EA;
 }
-
-.foto3 {
-  margin-top: 1.5vw;
-}
-
-a div {
-  overflow: hidden;
-}
-
-a div img {
-  opacity: 1;
-  transition: opacity 124ms linear, transform 124ms linear;
-  width: 100%;
-  height: 100%;
-}
-
-a:hover div img {
-  opacity: 0.5;
-  transform: scale(1.05);
-}
-
-.moto11 {
-  margin-top: 4vw;
-}
-
-.frstblock p {
-  text-align: left;
-  text-indent: 2em;
-  font-size: 1em;
-}
-
-.scndblock,
-.thrdblock {
-  margin-top: 4vw;
-}
-
-.scndblock p,
-.thrdblock p {
-  text-align: right;
-  text-indent: 25px;
-  font-size: 1em;
-}
-
-.thrdblock {
-  margin-bottom: 6vw;
-}
-
-.thrdblock p {
-  text-align: left;
-}
-
-/* разделения(та чёрная линия между разделами с надписью збоку) */
-.section {
-  margin-top: 2vw;
-  margin-bottom: 1vw;
+.Lpho {
   position: relative;
-  overflow: hidden;
-  font-weight: 400;
+  bottom: -20vh;
+  left: 4vw;
+  width: 15em;
+  height: auto;
+}
+.Lmain_1 {
+  background-image: url(/images/wilsan-u-66fLciVOcVI-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position-x: 55%;
+  background-position-y: 60%;
+  background-size: auto 150%;
+  width: 100%;
+  height: 120vh;
+  color: black;
+}
+.Lbeg_1 {
+  position: relative;
+  top: 10vh;
+  left: 4vw;
+  font-family: Bahnschrift;
+  font-size: 3em;
+  z-index: 1;
+}
+.Lbeg_2 {
+  position: relative;
+  top: 10vh;
+  left: 4vw;
   font-size: 2em;
-  letter-spacing: 0.1em;
-
-  text-transform: uppercase;
+  z-index: 1;
 }
-
-.section:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  border-top: 10px solid #000000;
-  margin-top: 0.6em;
-  margin-left: 0.2em;
-}
-
-.navbar {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.bg-dark {
-  background-color: #000000 !important;
-}
-
-.conteiner-header {
-  display: flex;
-  border-color: black;
-  justify-content: end;
-}
-
-.bgimg-1 {
-  opacity: 0.65;
-  background-attachment: fixed;
-  background-position: center;
+.Lmain_2 {
+  background-image: url(/images/Group_21.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-image: url("/images/Moto9.png");
-}
-
-.caption {
-  left: 0;
-  top: 50%;
+  background-position-x: 30%;
+  background-position-y: 60%;
+  background-size: auto 120%;
   width: 100%;
-  text-align: center;
-  color: #000;
-}
-
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
-
-/* разделения(та чёрная линия между разделами с надписью по центру) */
-.separator {
-  font-weight: 400;
-  font-size: 1.6em;
-  letter-spacing: 0.1em;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-top: 2vw;
-  margin-bottom: 1vw;
-  text-transform: uppercase;
-}
-
-.separator::before,
-.separator::after {
-  content: "";
-  flex: 1;
-  border-bottom: 7px solid #000;
-}
-
-.separator::before {
-  margin-right: 0.25em;
-}
-
-.separator::after {
-  margin-left: 0.25em;
-}
-
-/* про нас */
-.about {
-  margin-left: 5vw;
-  margin-left: 5vw;
-}
-
-.about p {
-  text-indent: 25px;
-  font-size: 1em;
-}
-
-/* большая картинка на мотоциклах */
-.parallax {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  height: 100%;
-  margin-bottom: 5vw;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: absolute;
-  height: 31vw;
-  width: 100%;
-  -webkit-text-stroke-width: 0.1em;
-  -webkit-text-stroke-color: #000000;
-  font-weight: bolder;
-}
-
-.parallax1 {
-  background: black;
-  height: 31vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.parallax h2 {
-  text-indent: 25px;
-  font-size: 2.3em;
-  color: white;
-}
-
-.moto p {
-  text-indent: 25px;
-  font-size: 1em;
-}
-
-.description img {
-  size: 80%;
-}
-
-.description p {
-  text-indent: 25px;
-  font-size: 1em;
-}
-
-/* меню верхнее */
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  font-size: 1em;
-  width: 100%;
-  height: 2.5em;
-  background-color: black;
-  z-index: 10;
-  color: white;
-}
-
-.MainMenu {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-  align-items: center;
-  margin: auto 0;
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-.MainMenu .items {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.MainMenu .items a {
-  width: 1.5em;
-  height: auto;
-  margin-right: 4em;
-  /* font-size: 1em; */
-  color: #ffffff;
-  white-space: nowrap;
-}
-
-.MainMenu .social {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.itemsMob {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.menu img {
-  width: 1.5em;
-  height: auto;
-  margin-left: 0.5em;
-}
-
-/* меню внутреннее */
-
-.headerInMain {
-  padding: 0.8em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.headerInMain img {
-  height: 130px;
-  width: auto;
-}
-
-.headerInMain .innerMenu {
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  white-space: nowrap;
-}
-
-.headerInMain .innerMenu a {
-  margin: 0 1em 0 1em;
-  font-size: 1.3em;
-  margin-top: 2vw;
-  color: black;
-}
-
-/* задник */
-
-.back {
-  padding-top: 2.5em;
-  padding-left: 2em;
-  padding-right: 2em;
-  height: 100%;
+  height: 130vh;
   overflow: hidden;
-  background-color: white;
+  padding-bottom: 2em;
 }
-
-.main {
+.Lmain_3 {
+  background-image: url(/images/Group_22.svg);
+  background-repeat: no-repeat;
+  background-position-x: 30%;
+  background-position-y: 60%;
+  background-size: auto 120%;
   width: 100%;
-  background-color: white;
-  min-height: calc(100vh - 2.5em - 102px);
+  height: 120vh;
+  overflow: hidden;
 }
-
-/* футер */
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.Lmain_4 {
+  background-image: url(/images/Group_23.svg);
+  background-repeat: no-repeat;
+  background-position-x: 45%;
+  background-position-y: 60%;
+  background-size: auto 120%;
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: white;
-  font-family: Reross Rectangular;
+  height: 120vh;
+  overflow: hidden;
 }
-
-footer a {
-  background-color: white;
-  text-align: center;
-}
-
-footer .rect {
-  background-color: black;
-  margin-bottom: 20px;
-  width: 100%;
-  height: 6px;
-}
-
-/* ширина контента */
-
-.back,
-.MainMenu {
-  width: 75%;
-}
-
-/* моб меню */
-
-.nav {
-  -webkit-transition: left 0.5s ease;
-  -moz-transition: left 0.5s ease;
-  -ms-transition: left 0.5s ease;
-  -o-transition: left 0.5s ease;
-  transition: left 0.5s ease;
-  background: black;
-  font-size: 1.5em;
-  cursor: pointer;
-  height: 25vh;
-  left: -20rem;
-  padding: 6em 1em 1em 1em;
-  position: fixed;
-  top: 0;
-  width: 8em;
-  z-index: 11;
-}
-
-.nav.expanded {
-  left: 0;
-}
-
-.nav ul {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  top: 60%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  z-index: 12;
-}
-
-.nav li {
-  margin-bottom: 0.5em;
-}
-
-.nav a {
-  text-decoration: none;
-  color: white;
-}
-
-.nav-toggle {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  width: 2em;
-  height: 1.5em;
-  left: 2rem;
-  position: fixed;
-  top: 1.25em;
-  z-index: 12;
-}
-
-.nav-toggle:hover {
-  opacity: 0.8;
-}
-
-.nav-toggle .nav-toggle-bar,
-.nav-toggle .nav-toggle-bar::after,
-.nav-toggle .nav-toggle-bar::before {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  background: white;
-  content: '';
-  height: 0.4rem;
-  width: 100%;
-}
-
-.nav-toggle .nav-toggle-bar {
-  margin-top: 0;
-}
-
-.nav-toggle .nav-toggle-bar::after {
-  margin-top: 0.8rem;
-}
-
-.nav-toggle .nav-toggle-bar::before {
-  margin-top: -0.8rem;
-}
-
-.nav-toggle.expanded .nav-toggle-bar {
-  background: transparent;
-}
-
-.nav-toggle.expanded .nav-toggle-bar::after,
-.nav-toggle.expanded .nav-toggle-bar::before {
-  background: white;
-  margin-top: 0;
-}
-
-.nav-toggle.expanded .nav-toggle-bar::after {
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.nav-toggle.expanded .nav-toggle-bar::before {
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-/* кнопка */
-.semi-transparent-button {
-  display: block;
-  box-sizing: border-box;
-  border: 5px solid black;
-  margin: 0 auto;
-  padding: 0.33em;
-  width: 80%;
-  min-height: 4vw;
-  max-width: 200px;
-  background: #110909;
-  /* запасной цвет для старых браузеров */
-  background: rgba(255, 255, 255, 0.5);
-  color: black;
-  text-align: center;
-  font-size: 1.1em;
-  text-decoration: none;
-  letter-spacing: 1px;
-  transition: all 0.3s ease-out;
-}
-
-.semi-transparent-button:hover,
-.semi-transparent-button:focus,
-.semi-transparent-button:active {
-  background: black;
-  color: white;
-  transition: all 0.5s ease-in;
-}
-
-/* елементы списков */
-.landingIMG-motocycles {
+.Lcont_1 {
   position: relative;
-  border: 5px solid black;
-  background-color: black;
+  top: 10vh;
+  left: 4vw;
+  font-size: 1.5em;
+  color: wheat;
+  z-index: 1;
 }
-
-/* картинки с обрамлением */
-.landingIMG-motocycles img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  object-fit: cover;
+.Lcont_2 {
+  position: relative;
+  top: 13vh;
+  left: 4vw;
+  font-size: 1.25em;
+  color: wheat;
+  z-index: 1;
 }
-
-.overflow-hidden {
+.Lmain_5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(/images/geronimo-giqueaux-1tzpezd7oA8-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: 100%;
+  background-origin: border-box;
+  width: 100%;
+  height: auto;
+  min-height: fit-content;
   overflow: hidden;
 }
-
-.motoLand,
-.motoLand p {
-  text-indent: 25px;
-  font-size: 1em;
-  color: black;
-  text-decoration: none;
+.Lend {
+  position: relative;
+  top: 10vh;
+  left: 4vw;
+  font-size: 1.5em;
+  color: wheat;
+  z-index: 1;
+}
+#Lsquare_button {
+  padding: 0.5em 1.0em 0.5em 1.0em;
+  margin-bottom: 11em;
+  position: relative;
+  display: inline-block;
+  width: auto;
+  top: 12vh;
+  left: 4vw;
+  font-family: Bahnschrift;
+  color: wheat;
+  font-size: 2em;
+  background-image: linear-gradient(60deg, rgba(0, 0, 0, 1), 
+                                          rgba(7, 7, 7, 0.95), 
+                                          rgba(33, 33, 33, 0.74), 
+                                          rgba(33, 33, 33, 0.49), 
+                                          rgba(98, 98, 98, 0.49), 
+                                          rgba(128, 128, 128, 0.40));
+}
+@media (max-width: 552px){
+  /* header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 11%;
+  } */
+}
+@media (max-width: 694px){
+  /* #me {
+      bottom: 12em;
+  } */
+}
+@media (max-width: 900px){
+  .Lbeg_1 {
+      top: 30vh;
+  }
+  .Lbeg_2 {
+      top: 30vh;
+  }
+}
+@media (max-width: 530px){
+  .Lbeg_1 {
+      font-size: 2.3em;
+  }
+  .Lbeg_2 {
+      font-size: 1.5em;
+  }
+}
+@media (max-width: 360px){
+  .Lbeg_1 {
+      font-size: 2em;
+  }
+  .Lbeg_2 {
+      font-size: 1em;
+  }
+}
+@media (max-width: 500px){
+  .Lcont_1 {
+      position: relative;
+      top: 10vh;
+      left: 4vw;
+      font-size: 1.25em;
+      color: wheat;
+      z-index: 1;
+  }
+  .Lcont_2 {
+      position: relative;
+      top: 13vh;
+      left: 4vw;
+      font-size: 1em;
+      color: wheat;
+      z-index: 1;
+  }
+  #Lsquare_button {
+      font-size: 1.5em;
+  }
+}
+@media (max-width: 750px){
+  .Lend {
+      font-size: 1.25em;
+  }
+}
+@media (min-width: 1200px) {
+  /* html {
+      font-size: 100%;
+  } */
+} 
+@media screen and (max-width: 420px) {  
+  /* #contacts_ {
+      font-size: 0.85em;
+  } */
 }
 
-.motoLand h5 {
-  font-weight: bold;
-  text-transform: uppercase;
-}
 
-/* для ссылок инсты\видео */
-.instagram-div {
-  width: 100%;
+/* dak;js;dkja;sdja;sk;fk */
+
+
+.grad {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgb(49, 97, 119), 
+                                      rgb(14, 29, 36));
+  background-size: 75vw 100%;
+  background-position: center;
 }
-
-/* линия разделения списков */
-.line {
-  border-top: 1px solid #d6d6d6;
+.back {
+  width: 75vw;
+  height: 100%;
+  overflow: hidden;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgb(49, 96, 119), 
+                                          rgb(49, 97, 119));
+  min-height: 10vh;
+  padding: 1em;
   margin: 1em;
 }
-
-.ava {
-  position: relative;
+#name {
+  font-size: 1.5em;
 }
-
-.round-me {
-  position: absolute;
+.main {
+  display: flex;
+  flex-direction: row;
+}
+.left {
   width: 100%;
   height: 100%;
-  top: 0%;
-  left: 0%;
-  border-radius: 50%;
+}
+#menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom, rgb(49, 97, 119), 
+                                      rgb(14, 29, 36));
+  padding: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+  width: 100%;
+  font-size: 0.8em;
+}
+#menu .pages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: uppercase;
+}
+.Applogo {
+  margin: 1em;
+  margin-right: 4em;
+  height: 5em;
+  width: auto;
+}
+a:link, a:visited, a:hover {
+  color: #ffffff;
 }
 
-.round-me img {
-  border-radius: 50%;
+a:active {
+  color: rgb(182, 167, 157);
 }
-
-.IMG-buying {
+#menu .pages .item{
+  margin-right: 2em;
+  font-size: 1.5em;
+}
+.language {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5em;
+  width: 10vw;
+  text-transform: uppercase;
+}
+.right_phot {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1em;
+}
+.pictures {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 2em;
+}
+.pictures_main {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin-bottom: 1em;
+  height: 50vh;
+}
+.pictures_sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.pictures_sec img{
+  width: auto;
+  height: 5em;
+  margin: 0.5em;
+}
+.names {
+  font-family: Bahnschrift;
+  font-size: 1.5em;
+}
+.right_cont {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  width: 100%;
+  padding: 1em;
+}
+.grad_rect {
+  background: linear-gradient(to right, rgba(44, 107, 162, 1), 
+                                      rgba(0, 148, 49, 0.20), 
+                                      rgba(0, 148, 49, 0));
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+.bois {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.ico {
+  width: 3em;
+  height: auto;
+  margin: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.to_center {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.IMG-buying img {
-  width: 80%;
-  height: 80%;
-}
-
-.IMG-container {
-  width: 10%;
-}
-
-/* для вывода товаров */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
   width: 100%;
-  border-radius: 20px;
-  border-color: black;
-  border-width: 0.2vw;
-  margin-top: 5vw;
-  transition: 1s;
 }
-
-.card img {
-  border-radius: 15px 15px 0 0;
-  max-height: 20vw;
-  width: auto;
-  object-fit: cover;
+#map {
+  border: 0; 
+  width: 100%; 
+  height: 30em; 
 }
-
-#ref {
-  text-decoration: none;
-  color: black;
+footer {
+  background: linear-gradient(to top, rgb(0, 0, 0),  
+                                  rgba(0, 0, 0, 1),
+                                    rgba(0, 0, 0, 1),
+                                    rgba(0, 0, 0, 0.945),
+                                    rgba(0, 0, 0, 0.87),
+                                      rgba(0, 0, 22, 0));
+  width: 100%;
+  margin-top: 2em;
+  padding-left: 12.5%;
+  padding-right: 12.5%;
 }
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+#contacts_ {
+  bottom: 18em;
 }
-
-.acc {
-  font-size: 1.2em;
-  text-align: right;
+#contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  color: rgba(149,181,247,1);
 }
-
-.size-fit-image {
-  min-width: fit-content;
-  min-height: fit-content;
+#line {
+  width: 70%;
+  margin-bottom: 4em;
+  height: 1px;
 }
-
-/* соотношение сторон */
-.aspect-ratio-3-5 {
-  padding-top: 60%;
+#mail_ect{   
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  display: flex;
+  flex-direction: row;
+  position: static;
 }
-
-.aspect-ratio-3-4 {
-  padding-top: 75%;
+#me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1em;
+  left: 0;
+  bottom: 10em;
+  font-family: Bookman Old Style;
+  color: white;
 }
-
-.aspect-ratio-1-1 {
-  padding-top: 100%;
+#me img{
+  float: left;
+  margin-right: 0.5em;
+  max-width: 40px;
+  max-height: 40px;
 }
-
-.aspect-ratio-2-1 {
-  padding-top: 200%;
-}
-
-/* медиазапросы */
-
-/* адапт */
-@media (max-width: 990px) {
-  .foto2 {
-    margin-top: 1.5vw;
-  }
-
-  .landingIMG-motocycles {
-    margin-bottom: 0.5em;
-  }
-}
-
-@media (max-width: 850px) {
-  .headerInMain .innerMenu {
-    flex-direction: column;
-    align-items: center;
-  }
-
-}
-
-@media (max-width: 700px) {
-
-  body,
-  html {
-    font-size: 29px !important;
-  }
-
-  .menu {
-    font-size: 0.8em;
-  }
-
-  .MainMenu {
-    width: 90%;
-  }
-
+@media (max-width: 1000px){ 
   .back {
-    width: 100%;
+      padding-top: 7em;
   }
-
-  .back,
-  .MainMenu {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+  .main {
+      flex-direction: column;
+  }
+  .left {
+      position: fixed;
+      top: 0em;
+      left: 0em;
+      width: 100%;
+      height: auto;
+      z-index: 2;
+  }
+  #menu {
+      width: 100%;
+      height: 7em;
+  }
+  #menu .items{
+      /* flex-direction: row; */
+      width: auto;
+  }
+  .right_cont {
+      width: 100%;
+  }
+  .right_phot {
+      width: 100%;
   }
 }
-
-@media (max-width: 600px) {
-
-  body,
+@media (max-width: 800px){ 
+  /* .right_phot {
+      flex-direction: column;
+      align-items: center;
+  } */
+  /* .pictures {
+      width: 80%;
+  } */
+}
+@media (max-width: 660px){  
   html {
-    font-size: 18px !important;
-  }
-
-
-  .headerInMain .innerMenu a {
-    margin: 0.2em 0 0.2em 0;
-  }
-
-  .headerInMain img {
-    height: 100px;
-  }
-
-  .menu {
-    overflow: visible;
-    height: auto;
-    min-height: 2.5em;
-    padding: 0.5em 0em 0.5em 0em;
-  }
-
-  .menu img {
-    width: 4em;
-    height: auto;
-    margin-left: 15px;
-  }
-
-  .menu .MainMenu .items {
-    display: none;
-  }
-
-  .itemsMob {
-    display: flex;
-  }
-
-  .back {
-    font-size: 1.5em;
+      font-size: 85%;
   }
 }
-
-@media (max-width: 380px) {
-  .headerInMain img {
-    height: 80px;
-  }
+@media (max-width: 585px){ 
+  html {
+      font-size: 70%;
+  } 
 }
-
-@media only screen and (max-device-width: 1024px) {
-  .bgimg-1 {
-    background-attachment: scroll;
-  }
+@media (max-width: 360px){ 
+  html {
+      font-size: 60%;
+  } 
 }

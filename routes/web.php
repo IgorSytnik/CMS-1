@@ -1,52 +1,62 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\motocycle;
+// use App\Models\motocycle;
 
-Route::get('/', 'MotocycleController@land'
-)->name('landing');
+// Route::get('/', 'MotocycleController@land'
+// )->name('landing');
 
-Route::get('/motonews', function () {
-    return view('motonews');
-})->name('motonews');
+// Route::get('/motonews', function () {
+//     return view('motonews');
+// })->name('motonews');
 
-Route::get('/motoinfo', function () {
-    return view('motoinfo');
-})->name('motoinfo');
+// Route::get('/motoinfo', function () {
+//     return view('motoinfo');
+// })->name('motoinfo');
 
-Route::get('/motocontainer', function () {
-    return view('motocontainer');
-})->name('motocontainer');
+// Route::get('/motocontainer', function () {
+//     return view('motocontainer');
+// })->name('motocontainer');
 
-Route::get('/motostories', function () {
-    return view('motostories');
-})->name('motostories');
+// Route::get('/motostories', function () {
+//     return view('motostories');
+// })->name('motostories');
 
-Route::get('/motocontacts', function () {
-    return view('motocontacts');
-})->name('motocontacts');
+// Route::get('/motocontacts', function () {
+//     return view('motocontacts');
+// })->name('motocontacts');
 
-Route::get('/motoconteiner', function () {
-    return view('motoconteiner');
-})->name('motoconteiner');
+// Route::get('/motoconteiner', function () {
+//     return view('motoconteiner');
+// })->name('motoconteiner');
 
-// список мотоциклов
-Route::get('/buying', 'MotocycleController@allMoto')->name('cards');
+// // список мотоциклов
+// Route::get('/buying', 'MotocycleController@allMoto')->name('cards');
 
-// мотоцикл
-Route::get('/motobuying/{id}', 'MotocycleController@buying'
-)->name('motobuying');
+// // мотоцикл
+// Route::get('/motobuying/{id}', 'MotocycleController@buying'
+// )->name('motobuying');
 
-// список новостей
-Route::get('/news', 'MotocycleController@allNews')->name('cardsnews');
+// // список новостей
+// Route::get('/news', 'MotocycleController@allNews')->name('cardsnews');
 
-// новость
-Route::get('/motosnews/{id}', 'MotocycleController@news1'
-)->name('motosnews');
+// // новость
+// Route::get('/motosnews/{id}', 'MotocycleController@news1'
+// )->name('motosnews');
 
-// список аксессуаров
-Route::get('/accs', 'MotocycleController@allAccs')->name('cardsac');
+// // список аксессуаров
+// Route::get('/accs', 'MotocycleController@allAccs')->name('cardsac');
 
-// аксессуар
-Route::get('/motosacc/{id}', 'MotocycleController@acc1'
-)->name('motosacc');
+// // аксессуар
+// Route::get('/motosacc/{id}', 'MotocycleController@acc1'
+// )->name('motosacc');
+
+
+Route::redirect('/', '/landing');
+
+Route::resource('page', 'PageRes'
+);
+
+Route::get('/{page}/{lan?}', 'PagesPathController@pagesLang'
+)->name('pages');
+
