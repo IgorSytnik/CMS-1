@@ -4,13 +4,7 @@
             <div id="contacts">
                 <img src="/images/Line.png" id="line">
                 <div>
-                    @if($lan == 'ua')
-                        Контакти
-                    @elseif($lan == 'en')
-                        Contacts
-                    @else
-                        Контакты
-                    @endif
+                    Контакты
                 </div>
                 <div id="mail_ect">
                     <div style="margin-right: 1em;">
@@ -31,7 +25,7 @@
                     </div>
                 </div>
                 <div>
-                    {{$created_at}}
+                    {{$page->created_at}}
                 </div>
             </div>
         </div>

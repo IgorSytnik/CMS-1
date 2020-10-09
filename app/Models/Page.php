@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use App\Models\photo_category;
 use App\Models\photo_paths;
 
@@ -49,5 +50,13 @@ class Page extends Model
                             'caption' => $caption,
                             'created_at' => $this->created_at,
                             'lan' => $lan]);
+=======
+
+class Page extends Model
+{
+    protected $table = 'Pages';
+    public function render($pageName) {
+        return view('tmp', ['page' => $this->firstWhere('code', $pageName)]);
+>>>>>>> a556ca4250e0a1978785d6ef1e3998923f09c9a8
     }
 }

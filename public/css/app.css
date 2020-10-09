@@ -4,18 +4,41 @@
   padding: 0;
   box-sizing: border-box;
   border: none;
-  font-family: Lucida Sans Unicode;
+  font-family: Segoe UI;
   background-repeat: no-repeat;
 }
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(180deg, rgb(31, 160, 230)30%, 
-                                          rgb(30, 99, 131));
-  background-repeat: no-repeat;
+  background-image: linear-gradient(120deg, rgb(0, 20, 30), 
+                                          rgb(24, 15, 8));
   color: white;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-family: Lucida Sans Unicode;
+}
+body {
+  background-image: linear-gradient(180deg, rgb(1, 154, 234)30%, 
+                                          rgb(24, 15, 8));
+  background-repeat: no-repeat;
+}
+/* header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #0193D3;
+  position: fixed;
+  top: 0;
+  min-height: 7%;
+  width: 100%;
+  z-index: 2;
+} */
 #Lround_button {
   padding: 0.5em 1.5em 0.5em 1.5em;
   margin-left: 1em;
@@ -30,6 +53,7 @@ body {
   height: auto;
 }
 .Lmain_1 {
+  /* margin-top: 7vh; */
   background-image: url(/images/wilsan-u-66fLciVOcVI-unsplash.jpg);
   background-repeat: no-repeat;
   background-position-x: 55%;
@@ -142,6 +166,58 @@ body {
                                           rgba(98, 98, 98, 0.49), 
                                           rgba(128, 128, 128, 0.40));
 }
+/* footer {
+  position: relative;
+  background: linear-gradient(to top, rgba(22, 14, 7, 1)40%, 
+                                      rgba(47, 25, 15, 0.76)50%, 
+                                      rgba(120, 59, 38, 0.08)60%, 
+                                      rgba(128, 63, 41, 0));
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+#contacts_ {
+  position: absolute;
+  bottom: 18em;
+}
+#contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  font-family: Segoe UI;
+  color: rgba(149,181,247,1);
+}
+#line {
+  width: 70%;
+  margin-bottom: 2em;
+}
+#mail_ect{   
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  display: flex;
+  flex-direction: row;
+  position: static;
+}
+#me {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1em;
+  left: 0;
+  bottom: 10em;
+  font-family: Bookman Old Style;
+  color: white;
+  z-index: 2;
+}
+#me img{
+  float: left;
+  margin-right: 0.5em;
+  max-width: 40px;
+  max-height: 40px;
+} */
 @media (max-width: 552px){
   /* header {
       display: flex;
@@ -243,9 +319,9 @@ header {
   align-items: center;
   background-image: linear-gradient(to bottom, rgb(49, 96, 119), 
                                           rgb(49, 97, 119));
-  min-height: 10vh;
+  min-height: 12vh;
+  width: 100%;
   padding: 1em;
-  margin: 1em;
 }
 #name {
   font-size: 1.5em;
@@ -262,59 +338,29 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
   background-image: linear-gradient(to bottom, rgb(49, 97, 119), 
                                       rgb(14, 29, 36));
   padding: 1em;
-  padding-left: 3em;
-  padding-right: 3em;
   width: 100%;
-  font-size: 0.8em;
 }
-#menu .pages {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  text-transform: uppercase;
-}
-.Applogo {
-  margin: 1em;
-  margin-right: 4em;
-  height: 5em;
-  width: auto;
-}
-a:link, a:visited, a:hover {
-  color: #ffffff;
-}
-
-a:active {
-  color: rgb(182, 167, 157);
-}
-#menu .pages .item{
+#menu .item{
   margin-right: 2em;
   font-size: 1.5em;
-}
-.language {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 1.5em;
-  width: 10vw;
-  text-transform: uppercase;
 }
 .right_phot {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content:space-evenly;
   width: 100%;
   padding: 1em;
 }
 .pictures {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
+  width: 33%;
+  margin: 1em;
   margin-bottom: 2em;
 }
 .pictures_main {
@@ -324,14 +370,14 @@ a:active {
   flex-direction: column;
   padding: 1em;
   margin-bottom: 1em;
-  height: 50vh;
+  height: 30em;
+  width: 100%em;
 }
 .pictures_sec {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-wrap: wrap;
   width: 100%;
 }
 .pictures_sec img{
@@ -463,13 +509,13 @@ footer {
   }
 }
 @media (max-width: 800px){ 
-  /* .right_phot {
+  .right_phot {
       flex-direction: column;
       align-items: center;
-  } */
-  /* .pictures {
+  }
+  .pictures {
       width: 80%;
-  } */
+  }
 }
 @media (max-width: 660px){  
   html {
@@ -485,4 +531,18 @@ footer {
   html {
       font-size: 60%;
   } 
+}
+
+.Applogo {
+  margin: 1em;
+  margin-right: 4em;
+  height: 5em;
+  width: auto;
+}
+a:link, a:visited, a:hover {
+  color: #ffffff;
+}
+
+a:active {
+  color: rgb(182, 167, 157);
 }
