@@ -108,8 +108,8 @@ body {
   background-image: url(/images/geronimo-giqueaux-1tzpezd7oA8-unsplash.jpg);
   background-repeat: no-repeat;
   background-position-x: 50%;
-  background-position-y: 50%;
-  background-size: 100%;
+  /* background-position-y: 50%; */
+  background-size: auto 100%;
   background-origin: border-box;
   width: 100%;
   height: auto;
@@ -485,4 +485,73 @@ footer {
   html {
       font-size: 60%;
   } 
+}
+
+.list-grad {
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgb(19, 41, 51), 
+                                      rgba(14, 29, 36, 0));
+  background-size: 100vw 100%;
+  background-position: center;
+  overflow: hidden;
+}
+
+.list-both {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  min-height: 75vh;
+}
+.list-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 25%;
+  background-image: linear-gradient(to bottom, rgb(42, 120, 156), 
+                                      rgba(185, 1, 1, 0));
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 0.5em;
+}
+.list-right {
+  width: 75%;
+  background-image: linear-gradient(to bottom, rgb(185, 1, 1), 
+                                      rgb(18, 53, 99), 
+                                      rgba(18, 53, 99, 0));
+  background-size: 100% 100%;
+  background-position: center;
+}
+.Intro {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: linear-gradient(to right, rgba(44, 107, 162, 1), 
+                                      rgba(0, 148, 49, 0.20), 
+                                      rgba(0, 148, 49, 0));
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+.Intro-text {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, rgba(44, 107, 162, 1), 
+                                      rgba(0, 148, 49, 0.20), 
+                                      rgba(0, 148, 49, 0));
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+.Intro img {
+  object-fit: scale-down;
+  width: 30em;
+  height: auto;
+}
+.list-el {
+  border-top: 2px solid rgba(0, 23, 73, 0.5);
 }

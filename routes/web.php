@@ -57,6 +57,11 @@ Route::redirect('/', '/landing');
 Route::resource('page', 'PageRes'
 );
 
+Route::redirect('/encyclopedia', '/encyclopedia/Bruh');
+
+Route::get('/encyclopedia/{page}/{lan?}', 'PagesPathController@encLang'
+)->name('encyclopedia');
+
 Route::get('/{page}/{lan?}', 'PagesPathController@pagesLang'
 )->name('pages');
 

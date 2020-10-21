@@ -14,12 +14,9 @@ class TablePagesTable extends Migration
     public function up()
     {
         Schema::table('pages', function (Blueprint $table) {
-            $table->renameColumn('caption', 'caption_ru');
-            $table->renameColumn('main_content', 'main_content_ru');
-            $table->string('caption_ua', 255)->unique()->after('caption');
-            $table->string('caption_en', 255)->unique()->after('caption_ua');
-            $table->text('main_content_ua')->after('main_content');
-            $table->text('main_content_en')->after('main_content_ua');
+            // $table->dropColumn('parent');
+
+            // $table->string('parent', 255)->default('_top')->after('caption_en');
         });
     }
 
