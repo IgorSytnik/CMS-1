@@ -22,35 +22,29 @@ body {
   border-radius: 25px;
   background-color: #02A0EA;
 }
-.Lpho {
-  position: relative;
-  bottom: -20vh;
-  left: 4vw;
-  width: 15em;
-  height: auto;
-}
 .Lmain_1 {
   background-image: url(/images/wilsan-u-66fLciVOcVI-unsplash.jpg);
   background-repeat: no-repeat;
   background-position-x: 55%;
   background-position-y: 60%;
   background-size: auto 150%;
+  padding: 10vh 2em 2em 4vw;
   width: 100%;
   height: 120vh;
   color: black;
 }
 .Lbeg_1 {
-  position: relative;
+  /* position: relative;
   top: 10vh;
-  left: 4vw;
+  left: 4vw; */
   font-family: Bahnschrift;
   font-size: 3em;
   z-index: 1;
 }
 .Lbeg_2 {
-  position: relative;
+  /* position: relative;
   top: 10vh;
-  left: 4vw;
+  left: 4vw; */
   font-size: 2em;
   z-index: 1;
 }
@@ -60,6 +54,7 @@ body {
   background-position-x: 30%;
   background-position-y: 60%;
   background-size: auto 120%;
+  padding: 10vh 2em 2em 4vw;
   width: 100%;
   height: 130vh;
   overflow: hidden;
@@ -71,6 +66,7 @@ body {
   background-position-x: 30%;
   background-position-y: 60%;
   background-size: auto 120%;
+  padding: 10vh 2em 2em 4vw;
   width: 100%;
   height: 120vh;
   overflow: hidden;
@@ -81,25 +77,35 @@ body {
   background-position-x: 45%;
   background-position-y: 60%;
   background-size: auto 120%;
+  padding: 10vh 2em 2em 4vw;
   width: 100%;
   height: 120vh;
   overflow: hidden;
 }
 .Lcont_1 {
-  position: relative;
+  /* position: relative;
   top: 10vh;
-  left: 4vw;
+  left: 4vw; */
+  margin: 0 0 5vh 0;
   font-size: 1.5em;
   color: wheat;
   z-index: 1;
 }
 .Lcont_2 {
-  position: relative;
+  /* position: relative;
   top: 13vh;
-  left: 4vw;
+  left: 4vw; */
+  margin-bottom: 4vh;
   font-size: 1.25em;
   color: wheat;
   z-index: 1;
+}
+.Lpho {
+  /* position: relative;
+  bottom: -20vh;
+  left: 4vw; */
+  width: 15em;
+  height: auto;
 }
 .Lmain_5 {
   display: flex;
@@ -108,18 +114,20 @@ body {
   background-image: url(/images/geronimo-giqueaux-1tzpezd7oA8-unsplash.jpg);
   background-repeat: no-repeat;
   background-position-x: 50%;
-  background-position-y: 50%;
-  background-size: 100%;
+  /* background-position-y: 50%; */
+  background-size: 100% auto;
   background-origin: border-box;
+  /* padding: 10vh 2em 2em 4vw; */
   width: 100%;
   height: auto;
   min-height: fit-content;
   overflow: hidden;
 }
 .Lend {
-  position: relative;
+  /* position: relative;
   top: 10vh;
-  left: 4vw;
+  left: 4vw; */
+  margin: 10vh 2em 0 4vw;
   font-size: 1.5em;
   color: wheat;
   z-index: 1;
@@ -127,11 +135,12 @@ body {
 #Lsquare_button {
   padding: 0.5em 1.0em 0.5em 1.0em;
   margin-bottom: 11em;
-  position: relative;
+  /* position: relative; */
   display: inline-block;
   width: auto;
-  top: 12vh;
-  left: 4vw;
+  margin: 2vh 2em 13vh 4vw;
+  /* top: 12vh;
+  left: 4vw; */
   font-family: Bahnschrift;
   color: wheat;
   font-size: 2em;
@@ -227,7 +236,7 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, rgb(49, 97, 119), 
+  background-image: linear-gradient(to bottom, #316177, 
                                       rgb(14, 29, 36));
   background-size: 75vw 100%;
   background-position: center;
@@ -486,3 +495,140 @@ footer {
       font-size: 60%;
   } 
 }
+
+.list-grad {
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgb(19, 41, 51), 
+                                      rgba(14, 29, 36, 0));
+  background-size: 100vw 100%;
+  background-position: center;
+  overflow: hidden;
+}
+
+.list-both {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  min-height: 75vh;
+}
+.list-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 25%;
+  background-image: linear-gradient(to bottom, rgb(42, 120, 156), 
+                                      rgba(185, 1, 1, 0));
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 0.5em;
+}
+.list-right {
+  width: 75%;
+  background-image: linear-gradient(to bottom, rgb(185, 1, 1), 
+                                      rgb(18, 53, 99), 
+                                      rgba(18, 53, 99, 0));
+  background-size: 100% 100%;
+  background-position: center;
+}
+.Intro {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: linear-gradient(to right, rgba(44, 107, 162, 1), 
+                                      rgba(0, 148, 49, 0.20), 
+                                      rgba(0, 148, 49, 0));
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+.Intro-text {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, rgba(44, 107, 162, 1), 
+                                      rgba(0, 148, 49, 0.20), 
+                                      rgba(0, 148, 49, 0));
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+.Intro img {
+  object-fit: scale-down;
+  width: 30em;
+  height: auto;
+}
+.list-el {
+  border-top: 2px solid rgba(0, 23, 73, 0.5);
+}
+.alias-all {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.alias {
+  background-image: linear-gradient(to bottom, rgb(185, 1, 1), 
+                                      rgb(18, 53, 99), 
+                                      rgba(18, 53, 99, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1em;
+  margin: 2em;
+  width: fit-content;
+  height: auto;
+}
+.alias img {
+  /* margin-bottom: 1em; */
+  word-wrap: break-word;
+  width: 12em;
+  height: auto;
+}
+.alias div {
+  /* margin-bottom: 1em; */
+  word-wrap: break-word;
+  width: 100%;
+  width: 12em;
+  height: auto;
+}
+
+/* .right_phot {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1em;
+}
+.pictures {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 2em;
+}
+.pictures_main {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin-bottom: 1em;
+  height: 50vh;
+}
+.pictures_sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.pictures_sec img{
+  width: auto;
+  height: 5em;
+  margin: 0.5em;
+} */

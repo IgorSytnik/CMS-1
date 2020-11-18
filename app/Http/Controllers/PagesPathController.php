@@ -11,4 +11,8 @@ class PagesPathController extends Controller
         $page = new Page;
         return $page->firstWhere('code', $pageName)->render($pageName, $lan);
     }
+    public function encLang($pageName, $lan = null) {
+        $page = new Page;
+        return $page->firstWhere('code', $pageName)->enc($pageName, $lan);
+    }
 }
