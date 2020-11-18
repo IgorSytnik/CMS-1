@@ -9,6 +9,7 @@
     <div class="list-both">
         <div class="list-left">
             @if($code != 'Bruh')
+<<<<<<< HEAD
                 <a href="/{{ Request::segment(1) }}/{{ $parent }}/{{ $lan }}"><-
 
                 @if($lan == 'en')
@@ -31,6 +32,12 @@
                 @endif
                 
                 </a>
+=======
+                <a href="{{ $parent }}"><-Назад</a>
+            @endif
+            @for($i = 0; $i < count($children); $i++)
+                <a class="list-el" href="{{ $children[$i]->code }}">{{ $children[$i]->caption_ru }}</a>
+>>>>>>> 581c66e7b73b5f8e043e7b13dc3a64d2c1d16291
             @endfor
         </div>
         <div class="list-right">
